@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #1a1a1a, #333);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo img {
+    height: 50px; 
+    width: auto;
+}
+
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex; 
+    gap: 30px; 
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+}
+
+.navbar ul li a:hover {
+    background-color:gold;
+    border-radius: 120px;
+    color:black;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+    color: #ffd700;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 500px; 
+}
+
+.navbar-links li {
+    margin: 0 2px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.95em;
+}
+
+.navbar-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffd700;
+}
+.navbar-links.active {
+    display: flex;
+}
+
+/* Logout Button */
+.logout {
+    background-color: #d9534f;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    background-color: #c9302c;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    padding: 100px 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.stat-box p {
+    font-size: 2em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+

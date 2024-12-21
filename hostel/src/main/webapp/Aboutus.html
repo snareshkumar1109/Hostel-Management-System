@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Online Hotel Booking System</title>
+    <link rel="stylesheet" href="Aboutus.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo-final.png" alt="HotelBooking Logo" />
+            </div>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="Aboutus.html" class="active">About Us</a></li> -->
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="signup">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <h1>About Us</h1>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to the Online Hotel Booking System, your one-stop solution for booking hotels across the globe. Established in 2024, our goal is to provide a seamless booking experience for travelers, with access to hundreds of hotels at the best prices.</p>
+                <p>Our platform connects customers with top hotels in the most popular travel destinations, offering a range of room types, locations, and amenities to ensure every stay is comfortable and memorable.</p>
+                <p>Whether you’re traveling for business or leisure, we strive to offer the best deals, user-friendly experience, and exceptional customer service to make your trip planning stress-free.</p>
+            </div>
+            <div class="about-image">
+                <img src="hall.jpeg" alt="Hotel Booking" />
+            </div>
+        </div>
+        
+        <div class="mission-section">
+            <h2>Our Mission</h2>
+            <p>To simplify the process of finding and booking hotels online while providing unbeatable deals and world-class customer service.</p>
+        </div>
+        
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="team-member1.jpg" alt="Team Member 1" />
+                <h3>Naresh Kumar </h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2" />
+                <h3>Kishore</h3>
+                <p>Head of Marketing</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member3.jpg" alt="Team Member 3" />
+                <h3>Meganathan</h3>
+                <p>Customer Support Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

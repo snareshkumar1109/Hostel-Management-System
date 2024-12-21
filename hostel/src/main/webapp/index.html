@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Online Hotel Booking System</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo-final.png" alt="HotelBooking Logo" />
+            </div>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="signup">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Online Hotel Booking System</h1>
+            <p>Find the best deals on hotels across the world. Book now and enjoy exclusive discounts.</p>
+            <a href="login.html" class="cta-btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Hotels Section -->
+    <section class="featured-hotels">
+        <h2>Featured Hotels</h2>
+        <div class="hotels-container">
+            <div class="hotel-card">
+                <img src="bedroom.png" alt="Hotel 1">
+                <h3>Hotel Paradise</h3>
+                <p>Starting from $150/night</p>
+            </div>
+            <div class="hotel-card">
+                <img src="hall.jpeg" alt="Hotel 2">
+                <h3>Luxury Resort</h3>
+                <p>Starting from $200/night</p>
+            </div>
+            <div class="hotel-card">
+                <img src="swim.jpg" alt="Hotel 3">
+                <h3>City Inn</h3>
+                <p>Starting from $120/night</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #1a1a1a, #333);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo img {
+    height: 50px; 
+    width: auto;
+}
+
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex; 
+    gap: 30px; 
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+}
+
+.navbar ul li a:hover {
+    background-color:gold;
+    border-radius: 120px;
+    color:black;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+    color: #ffd700;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 600px; 
+}
+
+.navbar-links li {
+    margin: 0 2px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.95em;
+}
+
+.navbar-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffd700;
+}
+
+/* Mobile Navigation */
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-icon {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Box Styling */
+.login-box {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Login Form Heading */
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input Box Setup */
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input Field Design */
+.input-box input, 
+.input-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box select:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: #fff;
+}
+
+/* Login Button Design */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd700;
+    color: rgb(15, 14, 14);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #f7d305;
+    transform: translateY(-2px);
+}
+
+/* Sign-up Link Styling */
+p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+p a {
+    color:rgb(16, 15, 15);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color:goldenrod;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+}
